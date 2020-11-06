@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECEDEE;
+}
+
+.phone {
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+
+.notification-btn {
+    position: relative;
+    width: 2px;
+    height: 20px;
+    background-color: #364D6C;
+    border-left: 1px solid #aeb7c4;
+    border-radius: 1px 0 0 1px;
+    margin: auto;
+    left: -186px;
+    top: 300px;
+}
+
+.vol-up-btn {
+    position: relative;
+    width: 2px;
+    height: 40px;
+    background-color: #364D6C;
+    border-left: 1px solid #aeb7c4;
+    border-radius: 1px 0 0 1px;
+    margin: auto;
+    left: -186px;
+    top: 320px;
+}
+
+.vol-down-btn {
+    position: relative;
+    width: 2px;
+    height: 40px;
+    background-color: #364D6C;
+    border-left: 1px solid #aeb7c4;
+    border-radius: 1px 0 0 1px;
+    margin: auto;
+    left: -186px;
+    top: 335px;
+}
+
+.power-btn {
+    position: relative;
+    width: 2px;
+    height: 60px;
+    background-color: #364D6C;
+    border-right: 1px solid #aeb7c4;
+    border-radius: 1px 0 0 1px;
+    margin: auto;
+    right: -186px;
+    top: 250px;
+}
+
+.outer-color {
+    position: relative;
+    height: 740px;
+    width: 370px;
+    background-color: #364D6C;
+    border: 2px solid #aeb7c4;
+    border-radius: 55px;
+    margin: auto;
+}
+
+.outer-shape {
+    position: relative;
+    height: 730px;
+    width: 360px;
+    background-color: #000;
+    margin: auto;
+    border-radius: 50px;
+    top: 3px;
+}
+
+.inner-shape {
+    position: absolute;
+    background-color: #000;
+    background-image: url(../Orbs-Blue-Light.jpg);
+    background-size: 115%;
+    background-position: center;
+    height: 706px;
+    width: 336px;
+    margin: 12px;
+    border-radius: 40px;
+    animation: screensaver 3s .2s forwards;
+}
+
+.notch {
+    position: relative;
+    height: 25px;
+    width: 200px;
+    background-color: #000;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+}
+
+.speaker {
+    position: relative;
+    height: 5px;
+    width: 45px;
+    background-color: #181818;
+    margin: auto;
+    border-radius: 4px;
+    top: 6px;
+}
+
+.camera {
+    position: relative;
+    height: 12px;
+    width: 12px;
+    background-color: #181818;
+    border-radius: 50%;
+    left: 135px;
+    top: -3px;
+}
+
+.cameralens {
+    position: relative;
+    height: 6px;
+    width: 6px;
+    background-color: #202e40;
+    border-radius: 50%;
+    border: 1px solid #25354b;
+    margin: auto;
+    top: 3px;
+}
+
+.reflection1 {
+    position: relative;
+    height: 2px;
+    width: 2px;
+    background-color: #364D6C;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.reflection2 {
+    position: relative;
+    height: 2px;
+    width: 2px;
+    background-color: #364D6C;
+    border-radius: 50%;
+    top: 0;
+    left: 2px;
+}
+
+.lock {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: auto;
+    top: 3%;
+}
+
+.lock-pin {
+    width: 20px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #fff;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    margin: 0 10px;
+    top: 3px;
+    animation: openLock 1s 2s forwards;
+}
+
+.lock-holder {
+    width: 26px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    margin: 0 7px;
+    top: 18px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    position: relative;
+    top: 3%;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    top: 3%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    width: 50%;
+    left: 35%;
+    bottom: 30px;
+    opacity: 0;
+    animation: 1s fadeIn 3s forwards;
+}
+
+.swipe-icon {
+    position: absolute;
+    height: 5px;
+    width: 25%;
+    background-color: #fff;
+    bottom: 10px;
+    margin: 0 37.5%;
+    border-radius: 4px;
+    animation: swipeUp 2s 3s linear forwards;
+}
+
+
+@keyframes screensaver {
+    0% {
+        background-size: 115%;
+    }
+
+    100% {
+        background-size: 120%;
+    }
+}
+
+@keyframes openLock {
+    0% {
+        top: 3px;
+        width: 20px;
+    }
+
+    50% {
+        top: 1px;
+        width: 0;
+    }
+
+    100% {
+        top: 1px;
+        width: 20px;
+        left: 16px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        bottom: 20px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes swipeUp {
+    0% {
+        bottom: 10px;
+    }
+
+    40% {
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: 10px;
+    }
+}
