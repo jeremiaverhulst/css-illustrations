@@ -2,4 +2,4 @@
 Illustrations made with HTML/CSS.
 
 ## Example: iPhone 12
-![iPhone 12 screen](iphone_v3.png)
+<img src="iphone_v3.png" alt="iPhone 12" width="450px" height="">
